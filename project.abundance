@@ -1,16 +1,104 @@
 {
     "atomType": "Molecule",
-    "name": "Filing Cabnet",
+    "name": "Filing-Cabnet",
     "x": 0,
     "y": 0,
     "uniqueID": 1739928758626,
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1739928767703,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1739928798622
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.2003968253968254,
+            "y": 0.6991643454038997,
+            "uniqueID": 1739928780858,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 15
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 28.5
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.3948412698412699,
+            "y": 0.403899721448468,
+            "uniqueID": 1739928790236,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1739928780858
+                },
+                {
+                    "name": "height",
+                    "ioValue": 29
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.6402116402116402,
+            "y": 0.49303621169916434,
+            "uniqueID": 1739928798622,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1739928790236
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 20
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1739928780858,
+            "ap2ID": 1739928790236
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1739928790236,
+            "ap2ID": 1739928798622
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1739928798622,
+            "ap2ID": 1739928767703
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
