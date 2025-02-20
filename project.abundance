@@ -72,6 +72,20 @@
             ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 20
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.7577916295636687,
+            "y": 0.7493036211699164,
+            "uniqueID": 1740081396566,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
